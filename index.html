@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,600;&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <title>(to-do)list</title>
+</head>
+<body>
+    <nav class="container-nav">
+          <div>Language</div>
+          <div class="toggle-switch">
+            <input type="checkbox" id="toggle" class="toggle-input">
+            <label for="toggle" class="toggle-label">
+              <span class="toggle-ball"></span>
+            </label>
+          </div>       
+      </nav>
+    <header> <h1>(to-do)list</h1></header>
+    <section>
+        <div class="todo-container">
+            <div class="todo-item">
+                <input type="checkbox" id="task1">
+                <input type="text" placeholder="Type a task to-do 1">
+                <img class="delete-icon" src="/dist/assets/images/delete_icon.png" alt="Delete">
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" id="task2">
+                <input type="text" placeholder="Type a task to-do 2">
+                <img class="delete-icon" src="/dist/assets/images/delete_icon.png" alt="Delete">
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" id="task3">
+                <input type="text" placeholder="Type a task to-do 3">
+                <img class="delete-icon" src="/dist/assets/images/delete_icon.png" alt="Delete">
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" id="task4">
+                <input type="text" placeholder="Type a task to-do 4">
+                <img class="delete-icon" src="/dist/assets/images/delete_icon.png" alt="Удалить">
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>

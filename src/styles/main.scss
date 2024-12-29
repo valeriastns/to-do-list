@@ -1,0 +1,164 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/* Reset */
+* {
+    margin: 0px; /* Отступ снаружи */
+    padding: 0px; /* Отступ внутри */
+    box-sizing: border-box;
+  }
+
+  html {
+    box-sizing: border-box;
+    margin: 20px; /* Отступ снаружи */
+    padding: 20px; /* Отступ внутри */
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: #007BFF; /* Или другой цвет при наведении */
+  }
+
+  ul, ol {
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+  }
+
+  * {
+    transition: all 0.3s ease-in-out;
+  }
+  
+//BODY
+body {
+    font-style: $main-font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: $primary-color;
+}
+
+//TOGGLE
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+  }
+  
+  /* Скрываем стандартный checkbox */
+.toggle-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Стиль "трека" переключателя */
+.toggle-label {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Шарик внутри переключателя */
+.toggle-ball {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: rgb(206, 172, 172);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Стиль при активном состоянии переключателя */
+
+.toggle-input:checked + .toggle-label {
+    background-color: #af4e4c;
+  }
+  
+.toggle-input:checked + .toggle-label .toggle-ball {
+    transform: translateX(25px);
+  }
+
+
+
+//CONTAINER TO_DO
+.todo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+
+//ITEM_TO_DO
+.todo-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%; 
+    margin-bottom: 20px;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.todo-item .delete-icon {
+    width: 10px;
+    height: 10px;
+    background-color: #e9aac9;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+//HEADER
+.container-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: baseline;
+}
+
+
