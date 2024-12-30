@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,600;&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@200&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/main.css">
     <title>(to-do)list</title>
 </head>
-<body>
+<body class="light-mode">
     <nav class="container-nav">
-          <div>Language</div>
-          <div class="toggle-switch">
+          <div class="lang-switch">Language</div>
+          <button id="toggle-main">
             <input type="checkbox" id="toggle" class="toggle-input">
             <label for="toggle" class="toggle-label">
               <span class="toggle-ball"></span>
             </label>
-          </div>       
+        </button>       
       </nav>
-    <header> <h1>(to-do)list</h1></header>
-    <section>
+    <header id="header"> <h1> <div class="header-first" class="header-first-dark">(to-do)</div><div class="header-second" class="header-second-dark">.list</div></h1></header>
+    <section class="todo-section">
         <div class="todo-container">
             <div class="todo-item">
                 <input type="checkbox" id="task1">
@@ -50,6 +48,6 @@
 
     </footer>
 
-    <script src="scripts/script.js" defer></script>
+    <script src="/script.js" defer></script>
 </body>
 </html>
